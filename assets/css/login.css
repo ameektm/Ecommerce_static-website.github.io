@@ -1,0 +1,41 @@
+.login-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login{
+    width: 900px;
+    border-radius: 20px;
+    background: rgb(172, 231, 212);    
+}
+.login-left{
+    padding: 30px;
+}
+.login-left h3{
+    color: #1B5DDE;
+}x
+.login .login-right img{
+    height: 68vh;
+    width: 100%;
+}
+.login form input{
+    border: none;  
+    background: none;
+    border-radius: none !important;
+    border-bottom: 1px solid black;
+    
+}
+.login-right{
+    background: url(/assets/images/login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.login form button{
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 5px 0;
+    
+}

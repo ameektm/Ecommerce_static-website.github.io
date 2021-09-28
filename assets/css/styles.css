@@ -1,0 +1,92 @@
+/* Navigation Design */
+.nav-design{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 500ms ease-in-out;
+  background: #0C5543;
+  border-bottom-right-radius:  40px;;
+  border-bottom-left-radius:  40px;;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+.carousel-item .card-img img{
+  border-radius: 10px;
+}
+.carousel-item .card{
+  background: none;
+  margin: 0 5px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+/* Card Product Grid */
+.card-product-grid {
+  margin-bottom: 20px;
+}
+.card-product-grid .title{
+  text-decoration: none;
+  color: black;
+}
+.card-product-grid .img-wrap {
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+.card-product-grid .img-wrap img{
+  max-height: 150px;
+  width: 100%;
+}
+.card-product-grid .info-wrap{
+  overflow: hidden;
+  padding: 10px;
+}
+.card-product-grid .info-wrap .price-wrap{
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-product-grid:hover {
+  box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+  transition: 0.3s;
+}

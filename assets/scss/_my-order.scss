@@ -1,0 +1,41 @@
+.my-order{
+    background-color: white;
+    margin: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(77, 77, 77);
+    padding: 20px;
+    .order-wrap{
+        padding: 10px 0;
+        .order-details{
+            border-radius: 10px;
+            background-color: rgb(231, 231, 231);
+            .order-main-list{
+                .col-12{
+                    border: 1px solid gray;
+                    border-radius: 20px;
+                }
+                .order-component{
+                    margin: 0px 0px;
+                    .right-top{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            border: 2px solid black;
+                            padding: 5px;
+                            &:hover{
+                                color: white;
+                                background-color: black; 
+                            }
+                        }
+                    }
+                    .bottom{
+                        .order-title{
+                            max-width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,50 @@
+.search-details{
+    background-color: white;
+    margin: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(77, 77, 77);
+    padding: 20px;
+    .search-item-wrap{
+        .search-bar-top{
+            .input-group{ 
+                input{
+                   background: gray;
+                   color: white;
+                   &::placeholder{
+                       color: white;
+                       text-align: center;
+                   }
+                }
+                button{
+                    background-color: green;
+                    width: 100px;
+                    color: white;
+                }
+            }
+        }
+        .sort-search{
+            margin: 10px;
+            padding: 5px 10px;
+            padding-bottom: 0;
+            background-color: rgb(233, 233, 233);
+            .sort-view{
+                a{
+                    margin: 0 10px;
+                    color: black;
+                }
+            }
+        }
+        .search-item{
+            margin: 10px;
+            .col-md-3{
+                margin-bottom: 10px;
+                .card{
+                    border: 1px solid black;
+                    .card-img-top{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

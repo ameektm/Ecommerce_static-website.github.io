@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Medmax Ecommerce</title>
+</head>
+<body>
+    <header>
+        <div class="top-nav container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="left-top text-center d-flex align-items-center">
+                        <p>Call 015148221 For Help</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="right-top d-flex">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="">Track My Order</a></li>
+                            <li><a href="">Customer Care</a></li>
+                            <li><a href="">Store Finder</a></li>
+                            <li><a href="">Save More On</a></li>
+                            <li><a href=""><i class="fab fa-android"></i></a></li>
+                            <li><a href=""><i class="fab fa-apple"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav-drop">
+            <div class="middle-nav container-fluid">
+                <div class="row text-center align-items-center">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-sm-2 d-flex align-items-center justify-content-between">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/images/logo.png" alt="Logo" width="100" height="60" style="visibility: hidden;">
+                        </a>
+                        <div class="navigation-toggler">
+                            <a href="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><i class="fas fa-bars" style="color:black; font-size:28px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <div class="search-bar d-flex align-items-center">
+                            <div class="left-category d-flex align-items-center">
+                                <button class="me-1">Category</button>
+                                <span><i class="fa fa-chevron-down"></i></span>
+                            </div>
+                            <div class="right-search d-flex align-items-center w-100">
+                                <input placeholder="Search For Medicines . . .">
+                                <a href=""><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="user-icon ">
+                            <ul class="d-flex justify-content-evenly">
+                                <li><a href=""><i class="fa fa-user"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-cart-shopping"></i></a></li>
+                                <li><a href=""><i class="fa fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars" style="color:black; font-size:28px;"></i>
+                        </span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link styled-btn" href="#"><i class="fa fa-address-book"></i> Address</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown nav-link">
+                                <i class="fa fa-kit-medical"></i>
+                                <button class="dropbtn">Medicines</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                                <i class="fa fa-chevron-down"></i>
+                            </div> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-check-square"></i> Sell on Medmax</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-building"></i> Medmax Clinic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-sign-in-alt"></i> Professional Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link styled-btn" href="#"><i class="fa fa-upload"></i> Upload Prescription</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+     <!-- Dropdowns Starts -->
+     <section class="dropdown-section">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <i class="fa fa-chevron-down"></i>
+                    </div> 
+                </div>
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <i class="fa fa-chevron-down"></i>
+                    </div> 
+                </div>
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <i class="fa fa-chevron-down"></i>
+                    </div> 
+                </div>
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <i class="fa fa-chevron-down"></i>
+                    </div> 
+                </div>
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <i class="fa fa-chevron-down"></i>
+                    </div> 
+                </div>
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <i class="fa fa-chevron-down"></i>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!-- Dropdowns Ends -->
+    <!-- Trendings Section -->
+    <section class="trends">
+        <div class="my-slide my-3">
+            <h3 class="ms-5 text-light">Trending Today</h3>
+            <div class="row mx-auto my-auto text-center justify-content-center">
+                <div id="trendSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1594988885_Mini-banner_Web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1625679868_Comfy_Mini-banner_Web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1627107803_Kairali_web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1627108019_Planet-Herbs_web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1627108076_Boiron_web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev w-aut" href="#trendSlider" role="button" data-bs-slide="prev">
+                        <span class="text-danger" aria-hidden="true"><i class="fa fa-chevron-left fa-3x"></i></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#trendSlider" role="button" data-bs-slide="next">
+                        <span class="text-danger" aria-hidden="true"><i class="fa fa-chevron-right fa-3x"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trending Section Ends -->
+    <!-- Offers Section -->
+    <section class="offer">
+        <div class="top-offer d-flex align-items-center">
+            <div class="left-title me-auto ">
+                <h3 class="ms-5 text-dark">Offers Just For You</h3>
+            </div>
+            <div class="right-title p-2">
+                <h5>Sell All Offers</h5>
+                <div class="navigators-icons d-flex justify-content-around">
+                    <p><a href="#offerSlider" role="button" data-bs-slide="prev"><i class="fa fa-arrow-left"></i></a></p>
+                    <p><a href="#offerSlider" role="button" data-bs-slide="next"><i class="fa fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-2">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="offerSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <a href="#" class="main-offer">
+                                            <img src="./assets/images/offer.jpg" alt="">
+                                            <span class="text">
+                                                <h6>Get Cashback upto Rs.750 on Amazon pay</h6>
+                                                <span>Code: <span>SURP15</span></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <a href="#" class="main-offer">
+                                            <img src="./assets/images/offer.jpg" alt="">
+                                            <span class="text">
+                                                <h6>Get Cashback upto Rs.750 on Amazon pay</h6>
+                                                <span>Code: <span>SURP15</span></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <a href="#" class="main-offer">
+                                            <img src="./assets/images/offer.jpg" alt="">
+                                            <span class="text">
+                                                <h6>Get Cashback upto Rs.750 on Amazon pay</h6>
+                                                <span>Code: <span>SURP15</span></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <a href="#" class="main-offer">
+                                            <img src="./assets/images/offer.jpg" alt="">
+                                            <span class="text">
+                                                <h6>Get Cashback upto Rs.750 on Amazon pay</h6>
+                                                <span>Code: <span>SURP15</span></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <a href="#" class="main-offer">
+                                            <img src="./assets/images/offer.jpg" alt="">
+                                            <span class="text">
+                                                <h6>Get Cashback upto Rs.750 on Amazon pay</h6>
+                                                <span>Code: <span>SURP15</span></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <a href="#" class="main-offer">
+                                            <img src="./assets/images/offer.jpg" alt="">
+                                            <span class="text">
+                                                <h6>Get Cashback upto Rs.750 on Amazon pay</h6>
+                                                <span>Code: <span>SURP15</span></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Offer Section Ends -->
+    <!-- Deal of the Day -->
+    <section class="deal">
+        <div class="top-deal d-flex align-items-center">
+            <div class="left-title ms-5 me-auto ">
+                <h3 class="text-light">Deal of the Day</h3><span class="text-small">Deals Expiring On:</span>
+            </div>
+            <div class="right-title p-2">
+                <h5>View All Deals</h5>
+                <div class="navigators-icons d-flex justify-content-around">
+                    <p><a href="#dealSlider" role="button" data-bs-slide="prev"><i class="fa fa-arrow-left"></i></a></p>
+                    <p><a href="#dealSlider" role="button" data-bs-slide="next"><i class="fa fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="dealSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Deal Section -->
+
+    <!-- Featured Brand Starts -->
+    <section class="brands">
+        <div class="top-deal d-flex align-items-center">
+            <div class="left-title ms-5 me-auto ">
+                <h3 class="text-danger">Featured Brands</h3>
+            </div>
+            <div class="right-title p-2">
+                <h5>View All Deals</h5>
+                <div class="navigators-icons d-flex justify-content-around">
+                    <p><a href="#brandsSlider" role="button" data-bs-slide="prev"><i class="fa fa-arrow-left"></i></a></p>
+                    <p><a href="#brandsSlider" role="button" data-bs-slide="next"><i class="fa fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="brandsSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Brand Section -->
+
+    <!-- Heath Section -->
+    <section class="health">
+        <div class="my-slide my-3">
+            <h3 class="ms-5 text-light">Health Concerns</h3>
+            <div class="row mx-auto my-auto text-center justify-content-center">
+                <div id="healthSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1594988885_Mini-banner_Web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1625679868_Comfy_Mini-banner_Web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1627107803_Kairali_web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1627108019_Planet-Herbs_web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/images/1627108076_Boiron_web.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#healthSlider" role="button" data-bs-slide="prev">
+                        <span class="text-danger" aria-hidden="true"><i class="fa fa-chevron-left fa-3x"></i></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#healthSlider" role="button" data-bs-slide="next">
+                        <span class="text-danger" aria-hidden="true"><i class="fa fa-chevron-right fa-3x"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Health Section Ends -->
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <div class="container-fluid">
+            <h3 class="ms-5 pb-3">Why MedPlusMart ?</h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-12 mb-sm-2 mb-2 d-flex justify-content-evenly align-items-center">
+                    <img src="./assets/images/white_next.svg" class="img-fluid">
+                    <div class="medplus-content">
+                        <p>Maximize Your Savings</p>
+                        <p class="small desc">Lorsimus et, dojasljas jasldlkjaslkd lkjlkjm eaque!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 mb-sm-2 mb-2 d-flex justify-content-evenly align-items-center mb-2">
+                    <img src="./assets/images/white_next.svg" class="img-fluid">
+                    <div class="medplus-content">
+                        <p>Click and Pick</p>
+                        <p class="small desc">Lorsimus et, dojasljas jasldlkjaslkd lkjlkjm eaque!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 mb-sm-2 mb-2 d-flex justify-content-evenly align-items-center mt-2">
+                    <img src="./assets/images/white_next.svg" class="img-fluid">
+                    <div class="medplus-content">
+                        <p>Home Delivery</p>
+                        <p class="small desc">Lorsimus et, dojasljas jasldlkjaslkd lkjlkjm eaque!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 mb-sm-2 mb-2 d-flex justify-content-evenly align-items-center">
+                    <img src="./assets/images/white_next.svg" class="img-fluid">
+                    <div class="medplus-content">
+                        <p>Unlimited Health Records</p>
+                        <p class="small desc">Lorsimus et, dojasljas jasldlkjaslkd lkjlkjm eaque!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Us Section Ends-->
+
+    <!-- Mobile App Banner Starts -->
+    <section class="mobile-bannner">
+        <img src="./assets/images/download-app.jpg" alt="Mobile-Banner" class="img-fluid">
+    </section>
+    <!-- Banner Ends -->
+
+    <!-- NewsLetter Section Starts -->
+    <section class="newsletter my-3">
+        <div class="news-wrapper container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="left-news text-center d-flex justify-content-evenly align-items-baseline">
+                        <h3>NewsLetter <span>|</span></h3>
+                        <p class="lead">Sign up to newsletter and stay in touch.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex">
+                    <input placeholder="Enter your Email here . . ." class="w-75">
+                    <button class="btn-primary p-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NewsLetter Section Ends -->
+    <!-- About MedMart Starts -->
+    <section class="about-med">
+        <div class="info-wrapper">
+            <p>
+                Popular Wellness Products: Dabur Shilajit Gold Capsule 20's | Dabur Chyawanprash Awaleha 500 gm | Pankajakasthuri Breathe Easy Granules 400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla Flavour 400 gm (Tin) | Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan Excella Pro 1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips 50's | D Protin Chocolate Powder 500 gm | Climax Spray for Men 12 gm
+                Top-Selling Health Packages: AAROGYAM C | Netmed Health Pack | Aarogyam 1.3 | Netmeds Swasthya | Diabetic Checkup | Aarogyam 1.7 | Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds Swasthya Plus
+                Top-Selling Lab Tests: Complete Blood Count (CBC)/Complete Hemogram | LIVER FUNCTION TEST | Blood Glucose Fasting (FBS) | THYROID PROFILE -TOTAL(T3,T4&TSH) | Fever Profile | Urine Routine & Microscopy | Hemoglobin A1C (HbA1c) | 25-OH Vitamin D (TOTAL)/Vitamin D Total 25 Hydroxy | Uric Acid | Maternal screen-1st Trimester Dual Marker test
+                Top-Selling Radiology Tests: Ultrasound Whole Abdomen | MRI Scan Brain | CT Scan Brain | ECHO | X Ray Chest PA View | PET Scan | ECG | Ultrasound Pelvis | 3T MRI Scan Brain | CT Scan Chest
+                Most Viewed Health Articles:Chandraprabha Vati - Uses, Functions And Therapeutic Benefits | Amla: Benefits, Uses For Hair and Health Conditions, Supplements And Recipes | Amazing Benefits Of Chyawanprash For Bolstering Immunity And Vitality | Arogyavardhini Vati - Uses, Functions And Therapeutic Benefits | Amazing Benefits Of Betel Leaves Nobody Told You
+            </p>
+            <p class="strong">
+                Welcome to Netmeds.com! India's Leading Online Pharmacy!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum deserunt illo temporibus excepturi 
+                ut nesciunt, magnam provident, cupiditate perspiciatis quaerat nobis officiis minus. Ut voluptatum qui 
+                libero commodi tenetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, officiis 
+                recusandae possimus aspernatur sed commodi molestiae vitae aliquam, voluptatum porro ut dolorum nesciunt 
+                architecto, eum debitis quasi explicabo odit ipsum. Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Vel laudantium tenetur labore nemo? Molestiae, alias. At voluptatum deleniti deserunt fugiat 
+                maiores pariatur, officiis nostrum nulla voluptas. Ea optio atque ipsa.
+            </p>
+        </div>
+    </section>
+    <!-- About MedMart Ends -->
+    <!-- Payment Partners Start-->
+    <section class="payment-partner">
+        <div class="payment-wrapper container">
+            <h3 class="text-danger">Our Payment Partners</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center">
+                    <a href=""><img src="./assets/images/e-sewa.png" class="img-fluid" alt="payment"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center">
+                    <a href=""><img src="./assets/images/khalti.png" class="img-fluid" alt="payment"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center">
+                    <h3>Cash on Delivery</h3>
+                    <a href=""><img src="./assets/images/cash-on-delivery.png" class="img-fluid" alt="payment" style="height: 100px;"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center">
+                    <h3>Bank Transfer</h3>
+                    <a href=""><img src="./assets/images/bank-building.png" class="img-fluid" alt="payment" style="height: 100px;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Payment Partners End -->
+
+    <!-- Footer Starts-->
+    <footer>
+        <div class="top-footer container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-2 col-lg-2 text-center">
+                    <img src="./assets/images/logo.png" class="img-fluid" style="height: 100px;">
+                </div>
+                <div class="col-md-10 col-lg-10">
+                    <p class="lead">Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="middle-footer">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <ul class="footer-list">
+                        <li><a href=""><h5>COMPANY</h5></a></li>
+                        <li><a href="">About MedMax</a></li>
+                        <li><a href="">Customer Speaks</a></li>
+                        <li><a href="">In the News</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Fees & Payment Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <ul class="footer-list">
+                        <li><a href=""><h5>SHOPPING</h5></a></li>
+                        <li><a href="">Browse by A - Z</a></li>
+                        <li><a href="">Browse by Manufacturer</a></li>
+                        <li><a href="">Health Articles</a></li>
+                        <li><a href="">Offers or Coupons</a></li>
+                        <li><a href="">FAQ'S</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <ul class="footer-list">
+                        <li><a href=""><h5>SOCIAL</h5></a></li>
+                        <li><a href="">Facebok</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Linked In</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="partners">
+                        <h5>Official Partners</h5>
+                        <div class="partner-img">
+                            <div class="row mt-3">
+                                <div class="col-md-6 col-sm-6 col-6 col-lg-6">
+                                    <a href=""><img src="./assets/images/login.png" class="img-fluid" style="height: 80px;"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6 col-lg-6">
+                                    <a href=""><img src="./assets/images/login.png" class="img-fluid" style="height: 80px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="app-download">
+                        <h5>Download Mobile App</h5>
+                        <div class="partner-img">
+                            <div class="row mt-3">
+                                <div class="col-md-6 col-sm-6 col-6 col-lg-6">
+                                    <a href=""><img src="./assets/images/android.png" class="img-fluid" style="height: 80px;"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6 col-lg-6">
+                                    <a href=""><img src="./assets/images/apple.png" class="img-fluid" style="height: 80px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom-footer container">
+            <div class="top-section row pt-2">
+                <div class="col-md-3 col-sm-6 col-6 col-lg-3">
+                    <p class="text-center"><a href=""><i class="fa fa-kit-medical"></i> Medicine</a></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 col-lg-3">
+                    <p class="text-center"><a href=""><i class="fa fa-check-square"></i> Sell on Medmax</a></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 col-lg-3">
+                    <p class="text-center"><a href=""><i class="fa fa-building"></i> Medmax Clinic</a></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 col-lg-3">
+                    <p class="text-center"><a href=""><i class="fa fa-sign-in-alt"></i> Professional Login</a></p>
+                </div>
+            </div>
+            <p class="text-center pt-2">Copyrights &copy; 2021 Medmax Pvt Ltd.</p>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/612de022c3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+</body>
+</html>
