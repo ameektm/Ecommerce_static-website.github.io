@@ -1,13 +1,44 @@
 .main-category{
+    background-color: white;
+    margin: 20px 10px;
+    border-radius: 20px;
     box-shadow: 5px 5px rgb(77, 77, 77);
+    padding: 20px;
     .category-wrapper{
-        background: white;
+        background-color: rgb(238, 238, 238);
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 10px;
+        .accordion{
+            margin: 0 !important;
+            .accordion-button{
+                background: rgb(238, 238, 238);
+                color: black;
+            }
+            .accordion-body{
+                    background: rgb(238, 238, 238);
+                ul{
+                    list-style: none;
+                    padding-left: 0;
+                    li{
+                        padding: 5px;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                        }
+                        &:hover{
+                            background-color: rgb(212, 212, 212);
+                            color: black;
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     .filter-wrapper{
-        background: white;
+        
+        background-color: rgb(238, 238, 238);
         padding: 10px;
         border-radius: 5px;
     }
@@ -19,12 +50,24 @@
         }
     }
     .list-wrap{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height: 250px;
+                    border-radius: 20px;
+                }
+            }
+        }
         .main-list{
             margin: 10px 0;
             padding: 10px;
-            background: white;
+            background: rgb(208, 208, 255);
+            border-radius: 20px;
             ul{
                 list-style: none;
+                li{
+                    margin: 0 5px;
+                }
             }
         }
     }

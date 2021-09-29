@@ -1,17 +1,53 @@
 .main-category {
+  background-color: white;
+  margin: 20px 10px;
+  border-radius: 20px;
   -webkit-box-shadow: 5px 5px #4d4d4d;
           box-shadow: 5px 5px #4d4d4d;
+  padding: 20px;
 }
 
 .main-category .category-wrapper {
-  background: white;
+  background-color: #eeeeee;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
+.main-category .category-wrapper .accordion {
+  margin: 0 !important;
+}
+
+.main-category .category-wrapper .accordion .accordion-button {
+  background: #eeeeee;
+  color: black;
+}
+
+.main-category .category-wrapper .accordion .accordion-body {
+  background: #eeeeee;
+}
+
+.main-category .category-wrapper .accordion .accordion-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-category .category-wrapper .accordion .accordion-body ul li {
+  padding: 5px;
+}
+
+.main-category .category-wrapper .accordion .accordion-body ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-category .category-wrapper .accordion .accordion-body ul li:hover {
+  background-color: #d4d4d4;
+  color: black;
+}
+
 .main-category .filter-wrapper {
-  background: white;
+  background-color: #eeeeee;
   padding: 10px;
   border-radius: 5px;
 }
@@ -25,14 +61,24 @@
   padding: 2px 0;
 }
 
+.main-category .list-wrap .carousel-inner .carousel-item img {
+  height: 250px;
+  border-radius: 20px;
+}
+
 .main-category .list-wrap .main-list {
   margin: 10px 0;
   padding: 10px;
-  background: white;
+  background: #d0d0ff;
+  border-radius: 20px;
 }
 
 .main-category .list-wrap .main-list ul {
   list-style: none;
+}
+
+.main-category .list-wrap .main-list ul li {
+  margin: 0 5px;
 }
 
 .product-listing {
@@ -461,6 +507,15 @@ header .bottom-nav .nav-item .nav-link {
 }
 
 .brands {
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px #ce9595;
+          box-shadow: 5px 5px #ce9595;
+  margin: 10px 20px;
+  background-color: white;
+}
+
+.vertical-slider {
   padding: 10px;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px #ce9595;
