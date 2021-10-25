@@ -13,7 +13,22 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 }); 
 
+// Vertical SLider
+// $(document).ready(function () {
 
+//   $('.vertical-slider .btn-vertical-slider').on('click', function () {
+      
+//       if ($(this).attr('data-slide') == 'next') {
+//           $('#myVerticalCarousel').carousel('next');
+//       }
+//       if ($(this).attr('data-slide') == 'prev') {
+//           $('#myVerticalCarousel').carousel('prev')
+//       }
+
+//   });
+// });
+
+// Carsouel Sliders Section Starts
 
 let items = document.querySelectorAll('.trends .carousel .carousel-item')
 
@@ -24,6 +39,40 @@ items.forEach((el) => {
         if (!next) {
             // wrap carousel by using first child
         	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+
+
+let similarSLider = document.querySelectorAll('.similar-products .carousel .carousel-item')
+
+similarSLider.forEach((el) => {
+    const minPerSlide = 3
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = similarSLider[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+
+
+let relatedSlider = document.querySelectorAll('.related-post .carousel .carousel-item')
+
+relatedSlider.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = relatedSlider[0]
       	}
         let cloneChild = next.cloneNode(true)
         el.appendChild(cloneChild.children[0])
@@ -96,18 +145,100 @@ itemHealth.forEach((el) => {
     }
 })
 
+// Carsouel ENds
 
-$('.vertical-slider .vertical .item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
+
+// return refund toggler starts
+
+function howReturn(){
+    var x = document.getElementById("how-return");
+    var y = document.getElementById("return-policy");
+    var z = document.getElementById("refund-policy");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+      z.style.display = "none";
+      document.getElementById("btn-how").classList.add("nav-bg");
+      document.getElementById("btn-return").classList.remove("nav-bg");
+      document.getElementById("btn-refund").classList.remove("nav-bg");
+    } else {
+      x.style.display = "none";
     }
-    next.children(':first-child').clone().appendTo($(this));
-    for (var i=1;i<2;i++) {
-    next=next.next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
+};
+
+function returnPolicy(){
+    var x = document.getElementById("how-return");
+    var y = document.getElementById("return-policy");
+    var z = document.getElementById("refund-policy");
+    if (y.style.display === "none") {
+      x.style.display = "none";
+      y.style.display = "block";
+      z.style.display = "none";
+      document.getElementById("btn-return").classList.add("nav-bg");
+      document.getElementById("btn-how").classList.remove("nav-bg");    
+      document.getElementById("btn-refund").classList.remove("nav-bg");
+    } else {
+      y.style.display = "none";
     }
-    next.children(':first-child').clone().appendTo($(this));
+};
+
+function refundPolicy(){
+    var x = document.getElementById("how-return");
+    var y = document.getElementById("return-policy");
+    var z = document.getElementById("refund-policy");
+    if (z.style.display === "none") {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+      document.getElementById("btn-return").classList.remove("nav-bg");
+      document.getElementById("btn-how").classList.remove("nav-bg");
+      document.getElementById("btn-refund").classList.add("nav-bg");
+    } else {
+      z.style.display = "none";
     }
-    });
+};
+
+// Return Refund Ends
+
+
+// History & Reviews
+
+function toReview(){
+  var x = document.getElementById("review-content")
+  var y = document.getElementById("history-content")
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    document.getElementById("feedback-btn").classList.add("nav-bg");
+    document.getElementById("history-btn").classList.remove("nav-bg");
+  }
+  else{
+    x.style.display = "none";
+  }
+};
+
+
+function hero(){
+  console.log("Worked");
+};
+
+
+function historyView(){
+  var x = document.getElementById("review-content")
+  var y = document.getElementById("history-content")
+
+  if (y.style.display === "none") {
+    x.style.display = "none";
+    y.style.display = "block";
+    document.getElementById("feedback-btn").classList.remove("nav-bg");
+    document.getElementById("history-btn").classList.add("nav-bg");
+  }
+  else{
+    y.style.display = "none";
+  }
+};
+
+
+
+

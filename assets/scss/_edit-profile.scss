@@ -1,0 +1,18 @@
+.edit-profile{
+    background-color: white;
+    margin: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(77, 77, 77);
+    padding: 20px;
+    .profile-wrap{
+        margin: 15px 0;
+        border-radius: 5px;
+        padding: 20px 30px;
+        background: #fff;
+        box-shadow: 0 0 17px 0px rgb(161, 206, 161);
+        border: 1px solid #e3e3e3;
+        .title-support{
+            color: $primaryColor;
+        }
+    }
+}

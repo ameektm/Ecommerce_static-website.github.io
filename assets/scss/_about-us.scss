@@ -1,0 +1,159 @@
+.about-us{
+    .hero-element{
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0,0,0, 0.5)),url('../images/html_page.jpg');
+        height: 75vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .image-text {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-70%);
+            color: white;
+            text-align: center;
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 15px;
+                font-size: 2rem;
+                font-weight: 450;
+            }        
+        }
+    }
+    .about-heading{
+        text-align: center;
+        h1{
+            font-weight: 700;
+            font-size: 3rem;
+            padding: 10px 0;
+        }
+        .upper-wrapper{
+            p {
+                padding: 10px 0;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+        .mid-wrapper{
+            .blue-container{
+                background-color: rgb(101, 101, 250);
+                border: 1px solid black;
+                .content-values{
+                    ul{
+                        list-style: none;
+                    }
+                    li{
+                        padding-right: 0;
+                        margin: 20px 0;
+                    }
+                    .value-wrap{
+                        display: flex;
+                        align-items: center;
+                        .logo-div{
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .title-value{
+                            margin-left: 20px;
+                            h6{
+                                font-size: 25px;
+                                color: white;
+                            }
+                            p{
+                                margin: 0;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about-lower-heading{
+        h1{
+            padding: 10px;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        .lower-mid-wrapper{
+            .orange-container{
+                background-color: rgb(240, 201, 130);
+                border: 1px solid black;
+                ul{
+                    list-style: none;
+                    li{
+                        padding-right: 0;
+                        margin: 20px 0;
+                    
+                    }
+                }
+                .gateway-value-wrap{
+                    display: flex;
+                    align-items: center;
+                    .gateway-logo-div img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .gateway-title-value{
+                        margin-left: 20px;
+                        h6{
+                            font-size: 25px;
+                            color: white;
+                        }
+                        p{
+                            margin: 0;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lower-wrapper{
+        margin-top: 20px;
+        margin-left: 150;
+        padding: 60px;
+        span{
+            color: $primaryColor;
+            font-size: 3rem;
+        }
+        h1{
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .empower{
+            font-size: 15px;
+            font-weight: 600;
+        } 
+    } 
+    .lower-element{
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4),rgba(0,0,0, 0.3)),url('../images/world\ map.png');
+        height: 75vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-70%,-50%);
+            transform: translate(-50%,-50%);
+            h1{
+                font-size: 3rem;
+                color: whitesmoke;
+                font-weight: 700;
+            }
+            h2{
+                font-weight: 700;
+            }
+        }
+    }
+}

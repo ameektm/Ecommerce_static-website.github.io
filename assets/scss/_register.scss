@@ -1,0 +1,44 @@
+.register-main{
+    .register-wrap{
+        margin: 15px 0;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0 0 17px 0px rgba(200, 200, 200, 0.5);
+        border: 1px solid #e3e3e3;
+        .left-portion{
+            padding: 25px 35px;
+            .form-wrap{
+                form{
+                    margin-top: 20px;
+                    input{
+                        border: none;
+                        border-bottom: 1px solid black;
+                    }
+                    button{
+                        margin: 10px 0;
+                        border-radius: 20px;
+                    }
+                }
+                .socials{
+                    margin-top: 20px;
+                    a{
+                        padding: 10px;
+                        background-color: $primaryColor;
+                        border-radius: 20px;
+                        color: white;
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .right-portion{
+            background: url('../images/login.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+    }
+}

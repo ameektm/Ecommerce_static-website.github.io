@@ -22,10 +22,64 @@
                 <div class="col-lg-6 col-sm-12 col-12">
                     <div class="right-top d-flex">
                         <ul class="d-flex justify-content-center">
-                            <li><a href="">Track My Order</a></li>
-                            <li><a href="">Customer Care</a></li>
-                            <li><a href="">Store Finder</a></li>
-                            <li><a href="">Save More On</a></li>
+                            <li>
+                                <a type="button" id="trackOrder" data-bs-toggle="dropdown">Track Order</a>
+                                <div class="dropdown-menu" aria-labelledby="trackOrder">
+                                    <div class="wrap-track">
+                                        <div class="last-order">
+                                            <p class="fw-bold text-center">My Last Order</p>
+                                            <ul class="mt-2">
+                                                <li><a href="">03/10/2021 - Order 202891795377974</a></li>
+                                                <li><a href="">03/10/2021 - Order 202891795377974</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="track">
+                                            <p class="fw-bold text-center">Track My Order</p>
+                                            <p class="small mt-2">Your Order Number:</p>
+                                            <div class="top-input-wrap d-flex py-2">
+                                                <input type="text" class="input-no" placeholder="eg:123456789">
+                                                <button type="button"><i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                            <p class="small">For any Inquiries, <a href="">Click Here !!</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a type="button" id="customerCare" data-bs-toggle="dropdown">Customer Care</a>
+                                <div class="dropdown-menu" aria-labelledby="customerCare">
+                                    <div class="wrap-customer">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-hands-helping pe-2"></i>Help Center</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-box-open pe-2"></i>Order</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-shipping-fast pe-2"></i>Shipping & Delivery</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-money-check-alt pe-2"></i>Payments</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fa fa-exchange-alt pe-2"></i>Return & Refunds</a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li><a href="./store-finder.html">Store Finder</a></li>
+                            <li>
+                                <a type="button" id="saveMore" data-bs-toggle="dropdown">Save More</a>
+                                <div class="dropdown-menu" aria-labelledby="saveMore">
+                                    <div class="wrap-save">
+                                        <div class="download-section text-center">
+                                            <p class="pw-bold">Download the App</p>
+                                            <img src="./assets/images/apple.png" height="100px" width="100px" alt="QR_CODE">
+                                            <p class="small mt-2">Scan to Download App</p>
+                                            <div class="save-input d-flex py-2">
+                                                <input type="text" class="input-no" placeholder="eg:+977 9842614263">
+                                                <button type="button"><i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                            <div class="download-app d-flex justify-content-around">
+                                                <a href=""><img src="./assets/images/android.png" alt="" height="50px"></a>
+                                                <a href=""><img src="./assets/images/apple.png" height="50px" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li><a href=""><i class="fab fa-android"></i></a></li>
                             <li><a href=""><i class="fab fa-apple"></i></a></li>
                         </ul>
@@ -37,15 +91,121 @@
             <div class="middle-nav container-fluid">
                 <div class="row text-center align-items-center">
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-sm-2 d-flex align-items-center justify-content-between">
+                        <div class="dropdown-toggler">
+                            <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="fas fa-bars" style="color:white; font-size:20px;"></i>
+                            </a>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa fa-bars me-2"></i>Menu</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    <div class="collapse-design">
+                                        <a href="#"><i class="fa fa-address-book"></i> Address</a>
+                                    </div>
+                                    <div class="collapse-design">
+                                        <a href="#"><i class="fa fa-check-square"></i> Sell on Medmax</a>
+                                    </div>
+                                    <div class="collapse-design">
+                                        <a href="#"><i class="fa fa-upload"></i> Upload Prescription</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </div> 
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </div> 
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </div> 
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </div> 
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </div> 
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Link 1</a>
+                                                    <a href="#">Link 2</a>
+                                                    <a href="#">Link 3</a>
+                                                </div>
+                                                <i class="fa fa-chevron-down"></i>
+                                            </div> 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="navigation-toggler">
+                            <a href="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><i class="fas fa-bars" style="color:white; font-size:28px;"></i></a>
+                        </div> -->
                         <a class="navbar-brand" href="#">
                             <img src="./assets/images/logo.png" alt="Logo" width="100" height="60" style="visibility: hidden;">
                         </a>
-                        <div class="navigation-toggler">
-                            <a href="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><i class="fas fa-bars" style="color:black; font-size:28px;"></i></a>
+                        <div class="search-toggler">
+                            <a href="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa fa-search" style="color:white; font-size:20px;"></i></a>
+                            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                                <div class="search-bar d-flex align-items-center" id="searchBar">
+                                    <div class="left-category d-flex align-items-center">
+                                        <button class="me-1">Category</button>
+                                        <span><i class="fa fa-chevron-down"></i></span>
+                                    </div>
+                                    <div class="right-search d-flex align-items-center w-100">
+                                        <input placeholder="Search For Medicines . . .">
+                                        <a href=""><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
-                        <div class="search-bar d-flex align-items-center">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3 srch-bar">
+                        <div class="search-bar d-flex align-items-center" id="searchBar">
                             <div class="left-category d-flex align-items-center">
                                 <button class="me-1">Category</button>
                                 <span><i class="fa fa-chevron-down"></i></span>
@@ -59,7 +219,13 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="user-icon ">
                             <ul class="d-flex justify-content-evenly">
-                                <li><a href=""><i class="fa fa-user"></i></a></li>
+                                <li>
+                                    <a type="button" id="userIcon" data-bs-toggle="dropdown"><i class="fa fa-user"></i></a>
+                                    <ul class="dropdown-menu" aria-labelledby="userIcon">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-user pe-2"></i> Action</a></li>
+                                    </ul>
+                                    </a>
+                                </li>
                                 <li><a href=""><i class="fa fa-heart"></i></a></li>
                                 <li><a href=""><i class="fa fa-cart-shopping"></i></a></li>
                                 <li><a href=""><i class="fa fa-bell"></i></a></li>
@@ -70,20 +236,15 @@
                 </div>
             </div>
             <div class="bottom-nav">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <i class="fas fa-bars" style="color:black; font-size:28px;"></i>
-                        </span>
-                    </button> -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link styled-btn" href="#"><i class="fa fa-address-book"></i> Address</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown nav-link">
+                <div class="container-fluid nav-wrap">
+                    <div class="column-wrap">
+                        <div class="my-colums collapse-section">
+                            <div class="styled-btn">
+                                <a href="#"><i class="fa fa-address-book"></i> Address</a>
+                            </div>
+                        </div>
+                        <div class="my-colums">
+                            <div class="dropdown design-btn">
                                 <i class="fa fa-kit-medical"></i>
                                 <button class="dropbtn">Medicines</button>
                                 <div class="dropdown-content">
@@ -92,24 +253,31 @@
                                     <a href="#">Link 3</a>
                                 </div>
                                 <i class="fa fa-chevron-down"></i>
-                            </div> 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-check-square"></i> Sell on Medmax</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-building"></i> Medmax Clinic</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-sign-in-alt"></i> Professional Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link styled-btn" href="#"><i class="fa fa-upload"></i> Upload Prescription</a>
-                        </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="my-colums collapse-section">
+                            <div class="design-btn">
+                                <a href="#"><i class="fa fa-check-square"></i> Sell on Medmax</a>
+                            </div>
+                        </div>
+                        <div class="my-colums">
+                            <div class="design-btn">
+                                <a href="#"><i class="fa fa-building"></i> Medmax Clinic</a>
+                            </div>
+                        </div>
+                        <div class="my-colums">
+                            <div class="design-btn">
+                                <a href="#"><i class="fa fa-sign-in-alt"></i> Professional Login</a>
+                            </div>
+                        </div>
+                        <div class="my-colums collapse-section">
+                            <div class="styled-btn">
+                                <a href="#"><i class="fa fa-upload"></i> Upload Prescription</a>
+                            </div>
+                        </div>
+                        
                     </div>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -201,7 +369,7 @@
         <!-- BreadCrum Section Ends -->
             <div class="product-name">
                 <div class="top-wrap">
-                    <h4 class="text-primary">Find Your Prescription Medicines</h4>
+                    <h4>Find Your Prescription Medicines</h4>
                     <p class="lead">Shop by Drug Category</p>
                     <div class="list-item">
                         <ul class="d-flex justify-content-around">
@@ -218,6 +386,8 @@
                             <li><a href="">K</a></li>
                             <li><a href="">L</a></li>
                             <li><a href="">M</a></li>
+                        </ul>
+                        <ul class="d-flex justify-content-around">
                             <li><a href="">N</a></li>
                             <li><a href="">O</a></li>
                             <li><a href="">P</a></li>
@@ -237,7 +407,7 @@
                 </div>
                 <div class="bottom-wrap container-fluid">
                     <div class="row">
-                        <div class="col-md-3 col-sm-4 col-6 col-lg-3"><strong class="text-uppercase">A</strong></div>
+                        <div class="col-md-3 col-sm-4 col-6 col-lg-3"><p class="text-uppercase">A</p></div>
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Ad(148)</a></div>
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Ad(148)</a></div> 
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Ad(148)</a></div> 
@@ -247,7 +417,7 @@
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Ad(148)</a></div> 
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Ad(148)</a></div> 
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Ad(148)</a></div> 
-                        <div class="col-md-3 col-sm-4 col-6 col-lg-3"><strong class="text-uppercase">B</strong></div>
+                        <div class="col-md-3 col-sm-4 col-6 col-lg-3"><p class="text-uppercase">B</p></div>
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Bd(148)</a></div>
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Bd(148)</a></div> 
                         <div class="col-md-3 col-sm-4 col-6 col-lg-3"><a href="">Bd(148)</a></div> 

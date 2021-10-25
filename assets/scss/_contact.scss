@@ -1,0 +1,92 @@
+.contact-us{
+    background-color: white;
+    margin: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(77, 77, 77);
+    padding: 20px;
+    .contact-wrapper{
+            .contact-top{
+                iframe{
+                    height: 100%;
+                    width: 100%;
+                }
+                .bottom-desc{
+                    ul{
+                        list-style: none;
+                        padding-left: 0;
+                        li{
+                            margin: 20px 0;
+                            span{
+                                padding: 5px 10px;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                color: white;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .mid-section{
+                .content-mid  {
+                    background-color: rgb(228, 228, 228);
+                    border-radius: 10px;
+                    .lead title{
+                        p{
+                            font-weight: 500px;
+                        }
+                    }
+                    
+                }
+                .col-lg-4{
+                    .content-mid{
+                        padding: 10px;
+                        margin: 0 5px;
+                        min-height: 150px;
+                        span{
+                            margin: 10px;
+                        }
+                        .title{
+                            color: blue;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+    }
+    .bottom-contact{
+        background-color: rgb(228, 228, 228);
+        border-radius: 20px;
+        .contact-left{
+            img{
+                height: 300px;
+            }
+        }
+        .contact-right{
+            .styled-btn{
+                padding: 10px 20px;
+                background: orange;
+                color: white;
+                text-decoration: none;
+                margin-bottom: 20px;
+                
+            }
+            .fa-comments{
+                margin-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                margin-right: 5px;
+            }
+            p{
+                font-weight: 300px;
+                font-size: medium;
+            }
+            .fw-bold{
+                font-weight: 300;
+                text-shadow: 1px;
+            }
+        }
+    }
+
+}

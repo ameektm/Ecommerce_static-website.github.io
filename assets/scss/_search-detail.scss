@@ -4,6 +4,12 @@
     border-radius: 20px;
     box-shadow: 5px 5px rgb(77, 77, 77);
     padding: 20px;
+    .category-wrap{
+        .list-group{
+            box-shadow: 0 0 17px 0px rgb(161, 206, 161);
+            border: 1px solid #e3e3e3;
+        }
+    }
     .search-item-wrap{
         .search-bar-top{
             .input-group{ 
@@ -26,7 +32,7 @@
             margin: 10px;
             padding: 5px 10px;
             padding-bottom: 0;
-            background-color: rgb(233, 233, 233);
+            background-color: rgb(238, 238, 238);
             .sort-view{
                 a{
                     margin: 0 10px;
@@ -36,12 +42,19 @@
         }
         .search-item{
             margin: 10px;
-            .col-md-3{
+            .col-md-4{
                 margin-bottom: 10px;
                 .card{
                     border: 1px solid black;
+                    &:hover{
+                        transform: scale(1.03);
+                        transition: 500ms;
+                        box-shadow: 0 0 17px 0px $primaryColor;
+                        border: 1px solid #e3e3e3;
+                        cursor: pointer;
+                    }
                     .card-img-top{
-                        height: 200px;
+                        height: 150px;
                     }
                 }
             }

@@ -1,0 +1,59 @@
+.find-store{
+    background-color: white;
+    margin: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(77, 77, 77);
+    padding: 20px;
+    p{
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .find-store-wrap{
+        padding: 10px;
+        box-shadow: 0 0 17px 0px rgb(161, 206, 161);
+        border: 1px solid #e3e3e3;
+        .search-container{
+            border-bottom: 1px solid black;
+            width: fit-content;
+            input[type=text] {
+                padding: 6px;
+                margin-top: 8px;
+                background: none;
+                font-size: 17px;
+                width: 250px;
+                border: none;
+            }
+            button {
+                padding: 6px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .store-wrap{
+            margin: 20px 0px;
+            .content{
+                border: 1px solid rgb(201, 201, 201);
+                padding: 10px;
+                margin-bottom: 10px;
+                .head-part{
+                    .title{
+                        width: 70%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+                .contact{
+                    margin-top: 30px;
+                    font-size: 13px;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
