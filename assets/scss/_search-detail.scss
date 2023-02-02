@@ -1,23 +1,32 @@
 .search-details{
-    background-color: white;
+    background-color: #e3e6e9;
     margin: 20px 10px;
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(77, 77, 77);
+    box-shadow: 5px 5px black;
     padding: 20px;
+    h4{
+        color: $primaryColor;
+    }
     .category-wrap{
         .list-group{
             box-shadow: 0 0 17px 0px rgb(161, 206, 161);
-            border: 1px solid #e3e3e3;
+            // border: 1px solid #e3e3e3;
+            .list-group-item{
+                background-color: #e3e6e9;
+                &:hover{
+                    background-color: #e3e3e3;
+                }
+            }
         }
     }
     .search-item-wrap{
         .search-bar-top{
             .input-group{ 
                 input{
-                   background: gray;
-                   color: white;
+                   background:#e3e3e3 ;
+                   border: 1px solid black;
                    &::placeholder{
-                       color: white;
+                       color: black;
                        text-align: center;
                    }
                 }
@@ -25,6 +34,7 @@
                     background-color: green;
                     width: 100px;
                     color: white;
+                    
                 }
             }
         }
@@ -45,19 +55,62 @@
             .col-md-4{
                 margin-bottom: 10px;
                 .card{
-                    border: 1px solid black;
+                    // border: 1px solid black;
+                    opacity: 1;
+                    position: relative;
                     &:hover{
                         transform: scale(1.03);
                         transition: 500ms;
                         box-shadow: 0 0 17px 0px $primaryColor;
                         border: 1px solid #e3e3e3;
-                        cursor: pointer;
                     }
-                    .card-img-top{
-                        height: 150px;
+                    &:hover .img-wrap .hover-div{
+                        display: block;
                     }
+                    &:hover .card-img-top{
+                        opacity: 0.5;
+                        background-color: rgb(207, 207, 207);
+                    }
+                    .img-wrap{
+                        position: relative;
+                        .card-img-top{
+                            height: 170px;   
+                        }
+                        .hover-div{
+                            width: 90%;
+                            padding: 10px 0;
+                            background-color: $primaryColor;
+                            position: absolute;
+                            bottom: 0%;
+                            z-index: 9;
+                            display: none;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-radius: 10px;
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                &:hover{
+                                    color: red !important;
+                                }
+                            }
+                        }
+                    }
+                    .card-footer{
+                        padding-bottom: 0;
+                    }
+                    
                 }
             }
         }
+        .pagination{
+            .page-item{
+                color: black;
+                .page-link{
+                    color: black;
+                }
+            }
+        }
+      
     }
 }

@@ -1,5 +1,5 @@
 .help{
-    background: white;
+    background: #e6e6e9;
     .hero-element{
         background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0,0,0, 0.5)),url('../images/hero.jpg');
         height: 75vh;
@@ -131,8 +131,9 @@
         border-bottom: 1px solid rgb(161, 206, 161);
         .faq-section{
             .wrap-title{
-                background: rgb(236, 236, 236);
+                background:green;
                 padding: 10px 0;
+                color: white;
             }
             .main-faq{
                 margin-top: 50px;

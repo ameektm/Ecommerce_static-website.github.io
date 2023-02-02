@@ -1,14 +1,21 @@
 .contact-us{
-    background-color: white;
+    background-color:  #e6e6e6;
     margin: 20px 10px;
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(77, 77, 77);
+    box-shadow: 5px 5px black;
     padding: 20px;
     .contact-wrapper{
             .contact-top{
                 iframe{
                     height: 100%;
                     width: 100%;
+                }
+                .top-desc-about{
+                    .small{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: brown;
+                    }
                 }
                 .bottom-desc{
                     ul{
@@ -28,35 +35,47 @@
                 }
             }
             .mid-section{
-                .content-mid  {
-                    background-color: rgb(228, 228, 228);
-                    border-radius: 10px;
-                    .lead title{
-                        p{
-                            font-weight: 500px;
+                a{
+                    text-decoration: none;
+                    .content-mid  {
+                        background-color: rgb(255, 251, 251);
+                        border-radius: 10px;
+                        .lead title{
+                            p{
+                                font-weight: 600px;
+                                font-size: 2rem;
+                                
+                            }
                         }
+                        
                     }
-                    
                 }
                 .col-lg-4{
                     .content-mid{
                         padding: 10px;
                         margin: 0 5px;
                         min-height: 150px;
+                        p{
+                            font-size: 1rem;
+                            font-weight: 600;
+                        }
                         span{
                             margin: 10px;
                         }
                         .title{
-                            color: blue;
-                            font-weight: 400;
+                            color:darkblue;
+                            font-weight: 700;
                         }
                     }
                 }
             }
     }
     .bottom-contact{
-        background-color: rgb(228, 228, 228);
+        background-color: white;
         border-radius: 20px;
+        h3{
+            color: green;
+        }
         .contact-left{
             img{
                 height: 300px;
@@ -65,7 +84,7 @@
         .contact-right{
             .styled-btn{
                 padding: 10px 20px;
-                background: orange;
+                background: green;
                 color: white;
                 text-decoration: none;
                 margin-bottom: 20px;
@@ -74,13 +93,20 @@
             .fa-comments{
                 margin-right: 10px;
             }
-            a{
-                text-decoration: none;
-                margin-right: 5px;
-            }
+            // a{
+            //     text-decoration: none;
+            //     margin-right: 5px;
+            //     color:red;
+            // }
             p{
-                font-weight: 300px;
-                font-size: medium;
+                font-weight: 700px;
+                font-size: 1.2rem;
+                a{
+                    text-decoration: none;
+                    margin-right: 5px;
+                    color:red;
+                }
+
             }
             .fw-bold{
                 font-weight: 300;

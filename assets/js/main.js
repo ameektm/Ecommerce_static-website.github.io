@@ -13,21 +13,6 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 }); 
 
-// Vertical SLider
-// $(document).ready(function () {
-
-//   $('.vertical-slider .btn-vertical-slider').on('click', function () {
-      
-//       if ($(this).attr('data-slide') == 'next') {
-//           $('#myVerticalCarousel').carousel('next');
-//       }
-//       if ($(this).attr('data-slide') == 'prev') {
-//           $('#myVerticalCarousel').carousel('prev')
-//       }
-
-//   });
-// });
-
 // Carsouel Sliders Section Starts
 
 let items = document.querySelectorAll('.trends .carousel .carousel-item')
@@ -238,6 +223,8 @@ function historyView(){
     y.style.display = "none";
   }
 };
+
+
 
 
 

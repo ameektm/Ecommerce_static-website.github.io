@@ -1,8 +1,8 @@
 .add-cart{
-    background-color: white;
+    background-color: #e3e6e9;
     margin: 20px 10px;
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(77, 77, 77);
+    box-shadow: 5px 5px black;
     padding: 20px;
     p{
         margin: 0
@@ -25,7 +25,7 @@
                 margin: 10px 0;
                 .modal{
                     .modal-header{
-                        background-color: $navbarBg;
+                        background-color: orange;
                     }
                     .input-group{
                         background-color: rgb(236, 236, 236);
@@ -61,10 +61,16 @@
             padding: 20px;
             margin: 10px;
             border-radius: 20px;
-            background-color: rgb(236, 236, 236);
+            // background-color: rgb(236, 236, 236);
+            background-color: white;
+            .cart-wrap{
+                background-color: white;
+            }
             .cart-content{
                 margin: 10px 0;
-                border-bottom: 1px solid gray;
+                // border-bottom: 1px solid gray;
+                background-color: white;
+               
             }
         }
     }

@@ -1,8 +1,8 @@
 .my-order{
-    background-color: white;
+    background-color: #e6e6e9;
     margin: 20px 10px;
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(77, 77, 77);
+    box-shadow: 5px 5px black;
     padding: 20px;
     .order-wrap{
         padding: 10px 0;
@@ -37,15 +37,17 @@
                 }
                 .order-component{
                     margin: 0px 0px;
+                    padding: 10px;
+                    background-color: rgb(243, 243, 243);
                     .right-top{
                         a{
                             text-decoration: none;
-                            color: black;
-                            border: 2px solid black;
+                            color: white;
+                            // border: 2px solid black;
                             padding: 5px;
+                            background-color: green;
                             &:hover{
-                                color: white;
-                                background-color: black; 
+                                color: black; 
                             }
                         }
                     }

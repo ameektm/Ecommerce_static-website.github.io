@@ -1,8 +1,8 @@
 .find-store{
-    background-color: white;
+    background-color: #e6e6e9;
     margin: 20px 10px;
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(77, 77, 77);
+    box-shadow: 5px 5px black;
     padding: 20px;
     p{
         margin: 0;
@@ -41,6 +41,7 @@
                 border: 1px solid rgb(201, 201, 201);
                 padding: 10px;
                 margin-bottom: 10px;
+                background-color: white;
                 .head-part{
                     .title{
                         width: 70%;

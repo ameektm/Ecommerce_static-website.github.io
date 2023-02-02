@@ -1,0 +1,240 @@
+.sell_on-main{
+    padding: 10px 0 20px 0;
+    background-color: white;
+    .sell_on-wrapper{
+        padding: 20px 0;
+        .grow-bussiness{
+            padding: 10px;
+            h1{
+                font-size: 3rem;
+                font-weight: 550;
+                .grow-bussiness_span{
+                    color: #006931;
+                    font-weight: 700;
+                }
+            }
+            h3{
+                font-size: 2rem;
+                font-weight: 500;
+                margin-top: 20px;
+                padding: 10px;
+            }
+            button{
+                list-style: none;
+                border: none;
+                width: 150px;
+                height: 48px;
+                background-color: #006931;
+                margin-top: 20px;
+                border-radius: 30px;
+                color: white;
+                font-size: 25px;
+                margin-left: 40px;
+                transition: 1s;
+                &:hover{
+                    background-color: #58ee9e;
+                    color: black;
+                     font-size: 1.5rem;
+                }
+            }
+            .grow-bussiness_para{
+                margin-top: 40px;
+                font-size: 25px;
+                font-weight: 500;
+                list-style: none;
+                .login_link{
+                    text-decoration: none;
+                    color: #006931;
+                }
+            }
+        }
+    }
+    .join-medmax-heading{
+        h1{
+            font-size: 4rem;
+            span{
+                color: #006931;
+            }
+        }
+    }
+    .join_medmax-wrapper{
+        .join_medmax-content{
+            .join_medmax_para{
+                margin-left: 10px;
+                margin-top: 55px;
+                font-size: 1.2rem;
+                .join_medmax_span{
+                    font-weight: 700;
+                    color: #006931;
+                }
+            }
+            .d-flex{
+                img{
+                    height: 120px;
+                    margin-top: 40px;
+                    border: 1 px solid black;
+                    border-radius: 50%;
+                    background: rgb(20,122,68);
+                    background: linear-gradient(351deg, rgba(20,122,68,1) 0%, rgba(27,183,100,1) 52%, rgba(11,105,54,1) 97%);
+                    padding: 20px;
+                    font-size: 80px;
+                    color: white;
+                }
+                span{
+                    font-weight: 600;
+                    margin-left: 10px;
+                }
+            }   
+        }
+    }
+    .medmax_support_heading{
+        font-size: 3.5rem;
+        .medmax_support_span{
+            color: #006931;
+        }
+    }
+    .main-wrap-support{
+        background: rgb(219,226,149);
+        background: linear-gradient(351deg, rgba(219,226,149,1) 0%, rgba(205,227,100,1) 52%, rgba(186,169,34,1) 97%);
+        padding: 50px;
+        border-radius: 30px;
+        .support_container{
+            padding: 20px 10px;
+            border-radius: 30px;
+            background: white;
+            text-align: center;
+            height: 400px;
+            overflow: hidden;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            img{
+                height: 100px;
+                border-radius: 50%;
+                padding: 10px;
+                background: gray;
+            }
+            .support-content{
+                h3{
+                    color: orange;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+    .medmax_card-wrapper{
+        .card_left{
+            height: 370px;
+            width: 100%;
+            padding: 40px;
+            background: rgb(216, 213, 213);
+            img{
+                height: 60px;
+                width: 80px;
+                border: 1px solid black;
+                border-radius: 60%;
+                padding: 5px;
+                background-color: rgb(238, 215, 172);
+                border: none;
+            }
+            .card_para{
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-shadow: rgba(11,105,54,1);
+            }
+            .card_btn{
+                    margin-top: 8px;
+                    border: none;
+                    padding: 10px;
+                    background-color: #006931;
+                    color: white;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    &:hover{
+                         background-color: #90f0bd;
+                         color: black;
+                        
+                    }
+            }
+            
+            h1{
+                font-size: 3rem;
+                color: #7b1315;
+                text-transform: uppercase;
+                span{
+                    color: #006931;
+                }
+            }
+        }
+        .card_right{
+            height: 370px;
+            width: 100%;
+            /* border: 1px solid black; */
+            padding: 100px;
+            background: rgb(216, 213, 213);
+            .card_btn{
+                margin-top: 20px;
+                border: none;
+                background-color: #006931;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 10px;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #90f0bd;
+                    color: black;
+                }
+            }
+            h1,h3{
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: 500;
+                text-shadow: rgba(11,105,54,1);
+                color: #7b1315;
+            }
+        }
+    }
+    .bottom_paragraph-wrapper{
+        .para-heading{
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 2px;
+        }
+        .bottom_para{
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-shadow: 4px;
+        }
+        a{
+            text-decoration: none;
+            h6{
+                font-size: 1.5rem;
+                color: orange;
+            }
+            &:hover{
+                color: #006931;
+            }
+        }
+    }
+    .faq-section{
+        background-color: #006931;
+        padding: 10px 0;
+        a{
+            text-decoration: none;
+             color: white;
+        }
+    }
+    
+}
+   
